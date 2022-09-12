@@ -8,10 +8,10 @@ jobs:
           service-name-1:
             image: nginx
             ports: 
-             - 8080:8080
+             - 80
         steps:
             - name: Log nginx version
-              run: http://localhost:8080
+              run: (ls /.dockerenv && echo Found dockerenv) || (echo No dockerenv)
                 #node -v
                 #cat /etc/os-release
                 
