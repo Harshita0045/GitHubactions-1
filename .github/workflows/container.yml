@@ -6,12 +6,12 @@ jobs:
         runs-on: ubuntu-latest
         services:
           service-name-1:
-            image: node
+            image: nginx
             ports: 
-             - 4001:4000
+             - 8080:8080
         steps:
-            - name: Log node version
-              run: http://localhost:4001
+            - name: Log nginx version
+              run: http://localhost:8080
                 #node -v
                 #cat /etc/os-release
                 
