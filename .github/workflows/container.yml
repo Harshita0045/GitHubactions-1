@@ -4,13 +4,14 @@ on: push
 jobs: 
       node-docker:
         runs-on: ubuntu-latest
-        container: 
-           image: node
-           ports: 
+        services:
+          service-name-1:
+            image: node
+            ports: 
              - 4001:4000
         steps:
-           - name: Log node version
-             run: http://localhost:4001/api/items
+            - name: Log node version
+              run: http://localhost:4001/api/items
                 #node -v
                 #cat /etc/os-release
                 
