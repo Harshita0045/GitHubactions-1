@@ -11,7 +11,7 @@ jobs:
              - 80
         steps:
             - name: Log nginx version
-              run: (ls /.dockerenv && echo Found dockerenv) || (echo No dockerenv)
+              run: echo "Docker Nginx image is created and on port 80"
                 #node -v
                 #cat /etc/os-release
                 
