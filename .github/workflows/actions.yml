@@ -10,10 +10,13 @@ on:
     types: [closed, assigned, opened, reopened]
 
 jobs:
-  run-github-actions:
-  runs-on: ubuntu-latest
-  steps:
-    - name: List files
-      run: |
-        pwd
-        ls -a
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: List files
+        run: |
+          pwd
+          ls -a
