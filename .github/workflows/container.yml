@@ -6,6 +6,7 @@ jobs:
         runs-on: ubuntu-latest
         container: 
            image: node
+           ports: 8080
         steps:
            - name: Log node version
              run: |
