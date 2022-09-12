@@ -10,6 +10,7 @@ jobs:
              - 4001:4000
         steps:
            - name: Log node version
-             run: |
-                node -v
-                cat /etc/os-release
+             run: http://localhost:4001/api/items
+                #node -v
+                #cat /etc/os-release
+                
