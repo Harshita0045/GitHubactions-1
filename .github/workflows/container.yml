@@ -1,0 +1,13 @@
+name: Container1
+on: push
+
+jobs: 
+      node docker:
+        runs-on: ubuntu-latest
+        container: 
+           image: node
+      steps:
+        - name: Log node version
+          run: |
+            node -v
+            cat /etc/os-release
