@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Docker Images and Container view
     steps:
-     - name: Hello world action step
+      - name: Hello world action step
       #  id: hello
          uses: actions/hello-world-docker-action@v1
        # with:
