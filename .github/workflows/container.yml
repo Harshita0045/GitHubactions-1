@@ -2,7 +2,7 @@ name: Container1
 on: push
 
 jobs: 
-      node docker:
+      node-docker:
         runs-on: ubuntu-latest
         container: 
            image: node
