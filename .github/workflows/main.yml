@@ -8,7 +8,7 @@ jobs:
     name: Docker Images and Container view
     steps:
       - name: Hello world action step
-        working-directory: /home/runner/work/GitHubactions-1/GitHubactions-1/.github\workflows
+       # working-directory: /home/runner/work/GitHubactions-1/GitHubactions-1/.github\workflows
         run: docker build . --file Dockerfile --tag my-image1:$(date +%s)
       - name: Get the output docker image
         run: docker images
