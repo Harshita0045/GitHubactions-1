@@ -6,9 +6,12 @@ jobs:
   Docker_images:
     runs-on: ubuntu-latest
     name: Docker Images and Container view
+    defaults:
+      run:
+        working-directory: ./github/workflows
     steps:
       - name: Hello world action step
-        working-directory: ./github/workflows
+      #  working-directory: ./github/workflows
         run: docker build . --file Dockerfile --tag my-image1:$(date +%s)
       - name: Get the output docker image
         run: docker images
