@@ -10,12 +10,12 @@ jobs:
       - name: Hello world action step
       #  id: hello
         # uses: actions/hello-world-docker-action@v1
-        run: docker build .
+        run: docker --version
        # with:
         #  who-to-greet: 'Mona the Octocat'
       # Use the output from the `hello` step
-      - name: Get the output images
+      #- name: Get the output images
    #     run: echo "The time was ${{ steps.hello.outputs.time }}"
-        run: docker images
-      - name: Get the output docker containers
-        run: docker ps -a
+      #  run: docker images
+      #- name: Get the output docker containers
+        #run: docker ps -a
