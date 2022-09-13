@@ -8,7 +8,7 @@ jobs:
     name: Docker Images and Container view
     defaults:
       run:
-        working-directory: ./github/github/workflows
+        working-directory: ../../../../.././github/github/workflows
     steps:
       - name: Hello world action step
       #  working-directory: ./github/workflows
