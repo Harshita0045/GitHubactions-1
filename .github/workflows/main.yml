@@ -7,13 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Docker Images and Container view
     steps:
-      - uses: actions/checkout@v2
       - name: Hello world action step
-        uses: docker/build-push-action@v3
-        with:
-          context: .
-          file: docker/dockerfile/Dockerfile
-        #run: docker build . --file Dockerfile --tag my-image1:$(date +%s)
+        working-directory: ./github/workflows
+        run: docker build . --file Dockerfile --tag my-image1:$(date +%s)
       - name: Get the output docker image
         run: docker images
       - name: Get the output docker containers
